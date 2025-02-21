@@ -1,1 +1,70 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Maintenance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="maintenance-container">
+        <div class="maintenance-content">
+            <img src="https://i.imgur.com/XDL6d2O.png" class="maintenance-icon" alt="Maintenance Icon">
+            <h1>We're Under Maintenance</h1>
+            <p class="message">We're working hard to improve our website and we'll be back soon</p>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <p class="eta">Estimated Time: <span id="countdown">2 hours</span></p>
+            </div>
+            <div class="system-status">
+                <h2>System Status</h2>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <i class="fas fa-server"></i>
+                        <span class="status-label">Server</span>
+                        <span class="status-badge maintenance">Maintenance</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-database"></i>
+                        <span class="status-label">Database</span>
+                        <span class="status-badge operational">Operational</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-cloud"></i>
+                        <span class="status-label">API</span>
+                        <span class="status-badge maintenance">Maintenance</span>
+                    </div>
+                </div>
+            </div>
+            <div class="notification-signup">
+                <h2>Get Notified</h2>
+                <p>Subscribe to receive an email when we're back online</p>
+                <form class="signup-form" id="notificationForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="notify-button">
+                        <i class="fas fa-bell"></i> Notify Me
+                    </button>
+                </form>
+            </div>
+            <div class="social-updates">
+                <h2>Follow Our Progress</h2>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p>Need urgent assistance?</p>
+                <a href="mailto:support@example.com" class="contact-button">
+                    <i class="fas fa-envelope"></i> Contact Support
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
